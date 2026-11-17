@@ -83,6 +83,18 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+For the scoped L200 setup, basic chat/RAG, and basic agent notebooks, install
+the tested dependencies instead:
+
+```powershell
+pip install -r requirements-l200.txt
+```
+
+These notebooks use Azure CLI authentication and the Foundry OpenAI v1 endpoint.
+The agent examples use Foundry Agent Service (classic), which is scheduled to
+retire on March 31, 2027. The basic RAG notebook deletes and recreates its
+`SEARCH_INDEX_NAME` index; use a dedicated index that contains no data you need.
+
 ### Step 4: Azure AI Foundry Setup
 
 1. **Create Azure AI Foundry Resource and Project**

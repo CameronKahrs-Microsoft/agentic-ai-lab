@@ -80,7 +80,6 @@ target/
 
 .env
 
-.vscode/
 
 # Build results
 [Dd]ebug/
